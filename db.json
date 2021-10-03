@@ -7,16 +7,10 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "Practice Angular",
-      "day": "October 2nd",
-      "reminder": false
-    },
-    {
       "id": 5,
       "text": "Finish Angular project",
       "day": "October 3rd",
-      "reminder": false
+      "reminder": true
     }
   ]
 }
