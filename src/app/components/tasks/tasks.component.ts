@@ -14,7 +14,7 @@ export class TasksComponent implements OnInit {
 
   constructor(private taskService: TaskService) { }
 
-  //will eventually use an Observable here bc dealing with asynchronous data from server fetch
+  //will use an Observable here bc dealing with asynchronous data from server fetch
   //.subscribe is like a promise
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
@@ -27,6 +27,10 @@ export class TasksComponent implements OnInit {
   toggleReminder(task: Task) {
     task.reminder = !task.reminder;
     this.taskService.updateTaskReminder(task).subscribe();
+  }
+
+  addTask(task: Task) {
+    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)));
   }
 
 }
