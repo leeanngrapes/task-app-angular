@@ -12,6 +12,7 @@ export class TaskItemComponent implements OnInit {
   // Declare the task that's being put in as an input
   @Input() task!: Task;
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
+  @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
   // Set the icon as a prop of the task item so it can be used in html
   faTimes = faTimes;
 
@@ -23,6 +24,10 @@ export class TaskItemComponent implements OnInit {
 
   onDelete(task: Task) {
     this.onDeleteTask.emit(task);
+  }
+
+  onToggle(task: Task) {
+    this.onToggleReminder.emit(task);
   }
 
 }
