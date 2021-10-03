@@ -1,4 +1,8 @@
-<div class="task">
+<div
+  [ngClass]="{ reminder: task.reminder }"
+  class="task"
+  (dblclick)="onToggle(task)"
+>
   <h3>
     {{ task.text }}
     <!-- click this to call a service method called deleteTask -->
