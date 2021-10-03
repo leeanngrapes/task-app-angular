@@ -10,12 +10,12 @@
       "id": 5,
       "text": "Finish Angular project",
       "day": "October 3rd",
-      "reminder": true
+      "reminder": false
     },
     {
-      "text": "Get cozy",
-      "day": "Tonight",
-      "reminder": true,
+      "text": "Happy hour!",
+      "day": "4:30 pm",
+      "reminder": false,
       "id": 6
     }
   ]
