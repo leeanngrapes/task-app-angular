@@ -12,6 +12,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './pages/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     TasksComponent,
     TaskItemComponent,
     AddTaskComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   //imports are for modules
   imports: [
