@@ -16,7 +16,11 @@ import { AboutComponent } from './pages/about/about.component';
 const appRoutes: Routes = [
   {
     path: '', component: TasksComponent
+  },
+  {
+    path: 'about', component: AboutComponent
   }
+
 ]
 
 @NgModule({
